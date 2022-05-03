@@ -1,0 +1,115 @@
+/* =============================== */
+/* profile                         */
+/* =============================== */
+
+/* profile :: structure */
+#profile {
+    width: 100%;
+    min-height: 100vh;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb( var(--clr-dark) );
+    color: rgb( var(--clr-light) );
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* profile :: info */
+.profile .info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile .info {
+    display: flex;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: .5rem;
+}
+
+.profile .info .title {
+    padding-right: 1rem;
+    text-align: end;
+    opacity: .5;
+}
+
+/* profile :: quote */
+.profile .quote {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+
+    --border-weight: 1px;
+    --border-color: rgb( var(--clr-light), .3 );
+    border-top: var(--border-weight) solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+
+    padding: .7rem;
+}
+
+/* profile :: skills */
+.profile .skills {
+    margin-top: 1rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 35rem;
+}
+
+.profile .skill {
+    padding: .5rem 1rem;
+    margin: .5rem .5rem;
+    text-transform: uppercase;
+    transition: .2s;
+    outline: transparent;
+
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+
+.profile .skill:hover {
+    background: rgb( var(--clr-black) );
+    --outline-weight: 1px;
+    --outline-color: rgb( var(--clr-light) );
+    outline: var(--outline-weight) solid var(--outline-color);
+
+    --shadow-x: 1px;
+    --shadow-y: 1px;
+    --shadow-blur: 2px;
+    box-shadow: var(--shadow-x) var(--shadow-y) var(--shadow-blur) rgb( var(--clr-black) );
+
+    transform: translateY(-3px);
+}
+
+/* profile :: image */
+.profile .image img {
+    width: 20rem;
+    margin-left: 1rem;
+    filter: grayscale(1);
+    transition: .4s;
+}
+
+.profile .image img:hover {
+    filter: grayscale(0);
+}
+

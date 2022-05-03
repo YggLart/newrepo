@@ -1,0 +1,73 @@
+/* =============================== */
+/* header                          */
+/* =============================== */
+
+/* header :: structure */
+.header {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb( var(--clr-black) );
+    color: rgb( var(--clr-light) );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* header :: greeting */
+.header h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+
+.header h3:first-child {
+    margin-bottom: -2rem;
+    font-style: italic;
+} 
+
+/* header :: name */
+.header h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.header h1 span {
+    transition: .2s;
+    color:rgb( var(--clr-primary) );
+}
+
+.header h1:hover span {
+    color:rgb( var(--clr-light) );
+    padding-left: 1.5rem;
+}
+
+/* header :: horizontal rule */
+.header hr {
+    width: 40rem;
+    margin-bottom: 2rem;
+}
+
+/* header :: button */
+.header button {
+    margin-top: 1.5rem;
+    padding: 2rem 3rem;
+    
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 2px;
+
+    background: transparent;
+    color: rgb( var(--clr-primary) );
+    border: .1rem solid rgb( var(--clr-primary) );
+    transition: .2s;
+    cursor: pointer;
+}
+
+.header button:hover {
+    background:rgb( var(--clr-primary) );
+    color:rgb( var(--clr-light) );
+}

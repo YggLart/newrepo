@@ -1,0 +1,12 @@
+/* =============================== */
+/* career                          */
+/* =============================== */
+
+/* career :: structure */
+#career {
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb( var(--clr-dark) );
+}
+

@@ -1,94 +1,116 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Ygor's Personal Site</title>
-  </head>
-  <body>
-    <p>PT-BR</p>
-    <p>Oi! Essa página tá em construção... se você quer ver mais do que uma página em HTML, por favor acesse os links abaixo!</p>
-    <p>EN-US</p>
-    <p>Hi, page's under construction... if you want to see more than a raw HTML page, please see links below</p>
-    
-   <br/>
-   <br/>
-    <h2>Social</h2>
-    <ul>
-      <li><a href="https://www.linkedin.com/in/ygor-goulart-03bb10234/">Linkedin</a></li>
-      <li><a href="https://github.com/YggLart">Git Hub</a></li>
-      <li><a href="https://api.whatsapp.com/send?phone=5511952831030">Whatsapp</a></li>
-    </ul>
-    <h2>Links</h2>
-    <ul>
-      <li><a href="https//ygglart.github.io/spacetravel/">Space Travel</a> - Projeto Desafio do site Frontend Mentor.</li>
-      <li><a href="https://www.ideamaker.com.br/">Site Idea Maker</a> - Site de empresa que realizei o Design e Engenharia.</li>
-    </ul>
-    <!--
-    <a href="index.html">Home</a> | <a href="notes.html">My Notes</a> | <a href="hobbies.html">My Hobbies</a> | <a href="contact.html">Contact Me</a>
-    <br>
-    <hr>
-    <table cellspacing="20">
-      <tr>
-        <td><img src="imgs/yggprofile.jpg" alt="Ygor profile picture" width="200px" /></td>
-        <td><h1>Ygor Goulart</h1>
-        <p><em>Student</em></p>
-        <p>I am an trying to become a Web Deveoper. I love games and visual arts.</p>
-        <p>
-          Check <a href="https://twitter.com/ygglart/">my twitter</a> for updates.
-        </p>
-        <p>Check my <a href="https://yggart.carrd.co/">website</a> to see more of my artwork.</p></td>
-      </tr>
-    </table>
-    <h3>Education</h3>
-    <ul>
-      <li>Doing Udemy Web Development Bootcamp</li>
-      <li>Trying to reach new horizons</li>
-      <li>Also trying to improve my art</li>
-    </ul>
-    <hr>
-    <h3>Experiences</h3>
-    <table cellspacing="20">
-      <thead>
-        <th>Dates</th>
-        <th>Work</th>
-      </thead>
-      <tbody>
-      <tr>
-        <td>2020 - 2021</td>
-        <td>Head Design</td>
-      </tr>
-      <tr>
-        <td>2022</td>
-        <td>Code Student</td>
-      </tr>
-      </tbody>
-    </table>
-    <hr>
-    <h3>Skills</h3>
-    <table cellspacing="10">
-      <thead>
-        <th>Code</th>
-        <th></th>
-        <th>Design</th>
-        <th></th>
-      </thead>
-      <tbody>
-        <tr>
-          <td>HTML</td>
-          <td>★★★☆☆</td>
-          <td>Photoshop</td>
-          <td>★★★★★</td>
+<html lang="en">
 
-        </tr>
-        <tr>
-          <td>CSS</td>
-          <td>★★★☆☆</td>
-          <td>Illustrator</td>
-          <td>★★★☆☆</td>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        </tr>
-      </tbody>
-    </table>
--->
-  </body>
+    <!-- css :: main --> <link rel="stylesheet" href="styles/main.css">
+    <!-- css :: navbar  --> <link rel="stylesheet" href="styles/navbar.css">
+    <!-- css :: header --> <link rel="stylesheet" href="styles/header.css">
+    <!-- css :: profile --> <link rel="stylesheet" href="styles/profile.css">
+    <!-- css :: career --> <link rel="stylesheet" href="styles/career.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>Ygor Goulart</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <span class="main-logo"><a href="#">YG</a></span>
+        <ul>
+            <a href="#profile"><li>profile</li></a>
+            <a href="#experiences"><li>experiences</li></a>
+            <a href="#projects"><li>projects</li></a>
+            <a href="#contact"><li>contact</li></a>
+            <a href="#"><li class="resume">resume</li></a>
+        </ul>
+    </nav>
+
+    <!-- header -->
+    <section id="header">
+        <div class="header">
+            <h3>hi! i'm</h3>
+            <h1>ygor<span>Goulart</span></h1>
+            <hr>
+            <h3>Designer & Developer</h3>
+            <button>see my projects</button>
+        </div>
+    </section>
+
+    <!-- profile -->
+    <section id="profile">
+        <div class="profile">
+            <!-- profile :: info -->
+            <div class="info-container">
+                <div class="info">
+                    <div class="title">
+                        <p>name</p>
+                        <p>age</p>
+                        <p>location</p>
+                    </div>
+                    <div class="content">
+                        <p>ygor goulart</p>
+                        <p>26 years</p>
+                        <p>são paulo, brazil</p>
+                    </div>
+                </div>
+
+            <!-- profile :: quote -->
+            <div class="quote">
+                <p>"Designer by heart, Developer by choice."</p>
+            </div>
+
+            <!-- profile :: skills -->
+            <div class="skills">
+                <span class="skill">HTML5</span>
+                <span class="skill">CSS3</span>
+                <span class="skill">JS</span>
+                <span class="skill">Node</span>
+                <span class="skill">web3</span>
+                <span class="skill">dapps</span>
+                <span class="skill">jquery</span>
+                <span class="skill">bootstrap</span>
+                <span class="skill">react</span>
+                <span class="skill">mongodb</span>
+            </div>
+        </div>
+            
+
+            <!-- profile :: image -->
+            <div class="image">
+                <img src="images/profile.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="career">
+        <div class="container">
+            <h2>career</h2>
+
+            <div class="jobs">
+                <div class="job">
+                    <img src="images/ideamaker.png" alt="">
+                    <div class="j-info">
+                        <p>idea maker solutions</p>
+                        <p>lead designer & web developer</p>
+                        <p>2 years</p>
+                    </div>
+                    <div class="j-popup">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl ligula, lacinia a orci eu, sodales aliquam quam. Quisque dui erat, volutpat vel mi eget, faucibus scelerisque elit.</p>
+                        <a href="https://ideamaker.com.br/">website</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
 </html>
