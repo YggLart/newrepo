@@ -6,7 +6,8 @@
 #profile {
     width: 100%;
     min-height: 100vh;
-    
+    box-sizing: border-box;    
+    padding: 2rem;
 
     display: flex;
     align-items: center;
@@ -33,7 +34,7 @@
 .profile .info {
     display: flex;
 
-    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 3vw, 3rem);
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -50,9 +51,11 @@
 .profile .quote {
     text-align: center;
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2.3vw, 2.5rem);
     font-weight: 100;
     letter-spacing: 2px;
+
+    color: rgb( var(--clr-light), .5 );
 
     --border-weight: 1px;
     --border-color: rgb( var(--clr-light), .3 );
@@ -75,6 +78,7 @@
 }
 
 .profile .skill {
+    font-size: clamp(1rem, 2vw, 1.5rem);
     padding: .5rem 1rem;
     margin: .5rem .5rem;
     text-transform: uppercase;
@@ -103,7 +107,7 @@
 
 /* profile :: image */
 .profile .image img {
-    width: 20rem;
+    width: clamp(15rem, 36vw, 30rem);
     margin-left: 1rem;
     filter: grayscale(1);
     transition: .4s;
@@ -113,3 +117,30 @@
     filter: grayscale(0);
 }
 
+@media (max-width: 800px) {
+    #profile {
+        padding: 3rem 2rem;
+    }
+
+    .profile {
+        flex-direction: column-reverse;
+    }
+
+    .profile .info {
+        margin: 1rem 0;
+    }
+
+    .profile .quote {
+        margin: 1rem 0 2rem 0;
+    }
+
+    .profile .image img {
+        margin: 0;
+    }
+}
+
+@media (max-width: 460px) {
+    .profile .info {
+        font-size: clamp(1rem, 4vw, 2rem);
+    }
+}
