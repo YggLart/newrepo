@@ -6,7 +6,102 @@
 #career {
     display: flex;
     flex-direction: column;
+    height: 100vh;
 
     background-color: rgb( var(--clr-dark) );
+    color: rgb( var(--clr-light) );
 }
 
+#career .container {
+    padding: 1rem;
+}
+
+#career h2 {
+    font-size: clamp(2rem, 8vw, 4rem);
+    font-weight: 100;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+#career .jobs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+}
+
+#career .job {
+    width: 23rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    position: relative;
+
+    padding: 1rem;
+
+    color: rgb( var(--clr-light), .6 );
+    outline: 1px solid rgb( var(--clr-light), .1 );
+    transition: .2s;
+}
+
+#career .job img {
+    width: 5rem; height: 5rem;
+    opacity: .7;
+    transition: .2s;
+}
+
+#career .j-info {
+    padding-left: 1rem;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: .8rem;
+}
+
+#career .j-popup {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: .2s;
+}
+
+#career .job:hover {
+    color: rgb( var(--clr-light), 1 );
+    outline: 1px solid rgb( var(--clr-light), 1 );
+}
+
+#career .job:hover img {
+    opacity: 1;
+}
+
+#career .job:hover .j-popup {
+    width: 15rem;
+    padding: 1rem 1.5rem;
+
+    position: absolute;
+    right: 0;
+    opacity: 1;
+    display: flex;
+
+    outline: 1px solid rgb( var(--clr-light) );
+    background: rgb( var(--clr-dark), .8 );
+    backdrop-filter: blur(5px);
+    box-shadow: 0 .5rem 1rem rgb( var(--clr-black) )
+}
+
+#career .j-popup a {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: 1rem;
+    outline: 1px solid rgb( var(--clr-light), .3 );
+    transition: .2s;
+}
+
+#career .j-popup a:hover {
+    outline: 1px solid rgb( var(--clr-light), 1 );
+}

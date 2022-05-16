@@ -1,0 +1,13 @@
+/* =============================== */
+/* education                       */
+/* =============================== */
+
+/* education :: structure */
+#education {
+    display: flex;
+    flex-direction: column;
+}
+
+#education img {
+    width: 5rem; height: 5rem;
+}

@@ -11,14 +11,15 @@
     <!-- css :: header --> <link rel="stylesheet" href="styles/header.css">
     <!-- css :: profile --> <link rel="stylesheet" href="styles/profile.css">
     <!-- css :: career --> <link rel="stylesheet" href="styles/career.css">
+    <!-- css :: education --> <link rel="stylesheet" href="styles/education.css">
+
+
+    <!-- fontawesome --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/64de45cbba.js" crossorigin="anonymous"></script>
 
     <title>Ygor Goulart</title>
 </head>
@@ -26,17 +27,18 @@
 <body>
     <!-- navbar -->
     <nav class="navbar">
-        <span class="main-logo"><a href="#">YG</a></span>
-
-        <div class="nav-links">
-                 <a href="#profile">profile</a>
-                <a href="#experiences">experiences</a>
-                <a href="#projects">projects</a>
-                <a href="#contact">contact</a>
-                <a href="#" class="resume">resume</a>
+        <div class="main-logo"><a href="#">YG</a></div>
+        <ul id="nav-links">
+            <a href="#profile"><li>profile</li></a>
+            <a href="#career"><li>career</li></a>
+            <a href="#education"><li>education</li></a>
+            <a href="#projects"><li>projects</li></a>
+            <a href="#contact"><li>contact</li></a>
+            <a href="#"><li class="resume">resume</li></a>
+        </ul>
+        <div class="burger-icon" onclick="burgerMenu()">
+            <i class="fa fa-bars"></i>
         </div>
-
-        <div class="menu-icon" onclick="responsiveMenu()"><i class="fa-solid fa-bars"></i></div>
     </nav>
 
     <!-- header -->
@@ -102,10 +104,36 @@
 
             <div class="jobs">
                 <div class="job">
-                    <img src="images/ideamaker.png" alt="">
+                    <img src="images/finby.jpg" alt="">
+                    <div class="j-info">
+                        <p>Finby</p>
+                        <p>designer ui/ux</p>
+                        <p>1 month</p>
+                    </div>
+                    <div class="j-popup">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl ligula, lacinia a orci eu, sodales aliquam quam. Quisque dui erat, volutpat vel mi eget, faucibus scelerisque elit.</p>
+                        <a href="https://finby.io/">website</a>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <img src="images/ideamaker.jpg" alt="">
                     <div class="j-info">
                         <p>idea maker solutions</p>
-                        <p>lead designer & web developer</p>
+                        <p>lead designer</p>
+                        <p>2 years</p>
+                    </div>
+                    <div class="j-popup">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl ligula, lacinia a orci eu, sodales aliquam quam. Quisque dui erat, volutpat vel mi eget, faucibus scelerisque elit.</p>
+                        <a href="https://ideamaker.com.br/">website</a>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <img src="images/liq.png" alt="">
+                    <div class="j-info">
+                        <p>liq</p>
+                        <p>tech analysis</p>
                         <p>2 years</p>
                     </div>
                     <div class="j-popup">
@@ -117,7 +145,32 @@
         </div>
     </section>
 
-    <script src="main.js"></script>
+    <section id="education">
+        <div class="container">
+            <h2>education</h2>
+
+            <div class="unies">
+                <div class="uni">
+                    <img src="images/anhembi.jpg" alt="">
+                    <div class="uni-info">
+                        <p>university anhembi morumbi</p>
+                        <p>graphic design</p>
+                        <p>2015 - 2019</p>
+                    </div>
+                </div>
+                <div class="uni">
+                    <img src="images/anhembi.jpg" alt="">
+                    <div class="uni-info">
+                        <p>university anhembi morumbi</p>
+                        <p>analysis & system development</p>
+                        <p>2021 - 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- js :: main --> <script src="main.js"></script>
 </body>
 
 </html>
