@@ -11,9 +11,13 @@ nav {
     z-index: 100;
 
     --bg-opacity: .5;
-    background: rgb( var(--clr-dark) , var(--bg-opacity, .5) );
+    background: rgb( var(--clr-black) , var(--bg-opacity, .5) );
     color: rgb( var(--clr-light) );
-    backdrop-filter: blur(.5rem);
+
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgb( var(--clr-black) );
+
+
 
     display: flex;
     align-items: center;
@@ -50,7 +54,9 @@ nav ul {
     list-style-type: none;
     display: flex;
     font-size: 1rem;
-    z-index: 5;
+
+    z-index: 98;
+    transition: .5s;
 }
 
 nav ul li {
@@ -96,11 +102,11 @@ nav ul li.resume:hover {
     font-weight: 700;
 }
 
-/* navbar :: burger menu */
-.burger-icon {
-    width: 1.6rem; height: 1.8rem;
+.menu-icon {
+    width: 1.7rem;
     padding: 1rem;
-    margin-right: 1rem;
+    margin: 1rem 1rem 0 0;
+
     display: none;
     z-index: 5;
     cursor: pointer;
@@ -125,7 +131,28 @@ nav ul li.resume:hover {
         backdrop-filter: blur(0);
     }
 
-    #nav-links {
+    /* main logo */
+    nav .main-logo {
+        padding: 1rem;
+        margin: 1rem 0 0 1rem;
+
+        font-size: 2rem;
+        letter-spacing: -2px;
+        outline: 1px solid rgb( var(--clr-light) );
+        background: rgb( var(--clr-black) , var(--bg-opacity, .5) );
+    }
+
+    nav .main-logo::before {
+        height: .1rem; width: 0rem;
+        left: 0.5rem; top: 2.1rem;
+    }
+    
+    nav .main-logo:hover::before {
+        width: 3.5rem;
+    }
+
+    /* links */
+    .nav-links {
         height: 100vh;
         position: fixed;
         top: -1.5rem; right: -1rem;
