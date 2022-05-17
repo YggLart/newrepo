@@ -11,10 +11,10 @@ nav {
     z-index: 100;
 
     --bg-opacity: .5;
-    background: rgb( var(--clr-dark) , var(--bg-opacity, .5) );
+    background: rgb( var(--clr-black) , var(--bg-opacity, .5) );
     color: rgb( var(--clr-light) );
     backdrop-filter: blur(8px);
-    border-bottom: 1px solid rgb( var(--clr-dark) );
+    border-bottom: 1px solid rgb( var(--clr-black) );
 
 
     display: flex;
@@ -98,14 +98,17 @@ nav .main-logo:hover::before {
 }
 
 .menu-icon {
+    width: 1.7rem;
     padding: 1rem;
     margin: 1rem 1rem 0 0;
-    font-size: 2rem;
-    color: rgb( var(--clr-light) );
+
     display: none;
     z-index: 99;
     cursor: pointer;
-    opacity: .5;
+
+    font-size: 2rem;
+    color: rgb( var(--clr-light) );
+    background: rgb( var(--clr-black) , var(--bg-opacity, .5) );
     outline: 1px solid rgb( var(--clr-light) );
 }
 
@@ -126,6 +129,7 @@ nav .main-logo:hover::before {
         font-size: 2rem;
         letter-spacing: -2px;
         outline: 1px solid rgb( var(--clr-light) );
+        background: rgb( var(--clr-black) , var(--bg-opacity, .5) );
     }
 
     nav .main-logo::before {
