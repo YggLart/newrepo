@@ -11,6 +11,8 @@
     <!-- css :: header --> <link rel="stylesheet" href="styles/header.css">
     <!-- css :: profile --> <link rel="stylesheet" href="styles/profile.css">
     <!-- css :: career --> <link rel="stylesheet" href="styles/career.css">
+    <!-- css :: education --> <link rel="stylesheet" href="styles/education.css">
+
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,11 +22,15 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/64de45cbba.js" crossorigin="anonymous"></script>
 
+    <!-- ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>         
+
     <title>Ygor Goulart</title>
 </head>
 
 <body>
-    <!-- navbar -->
+    <!-- navbar :: start-->
     <nav class="navbar">
         <span class="main-logo"><a href="#">YG</a></span>
 
@@ -38,8 +44,9 @@
 
         <div class="menu-icon" onclick="responsiveMenu()"><i class="fa-solid fa-bars"></i></div>
     </nav>
+    <!-- navbar :: end -->
 
-    <!-- header -->
+    <!-- header :: start -->
     <section id="header">
         <div class="header">
             <h3>hi! i'm</h3>
@@ -49,73 +56,190 @@
             <button>see my projects</button>
         </div>
     </section>
+    <!-- header :: end -->
 
-    <!-- profile -->
+    <!-- profile :: start -->
     <section id="profile">
         <div class="profile">
-            <!-- profile :: info -->
+            <!-- info -->
             <div class="info-container">
                 <div class="info">
-                    <div class="title">
+                    <div class="title fw-300">
                         <p>name</p>
                         <p>age</p>
                         <p>location</p>
                     </div>
                     <div class="content">
-                        <p>ygor goulart</p>
+                        <p class="clr-primary">ygor goulart</p>
                         <p>26 years</p>
                         <p>são paulo, brazil</p>
                     </div>
                 </div>
 
-            <!-- profile :: quote -->
-            <div class="quote">
-                <p>"Designer by heart, Developer by choice."</p>
+                <!-- quote -->
+                <div class="quote">
+                    <p>"<span class="clr-primary fw-600">Designer</span> by heart, <span
+                            class="clr-primary fw-600">Developer</span> by choice."</p>
+                </div>
+
+                <!-- skills -->
+                <div class="skill-big-container">
+
+                    <div class="skill-container">
+                        <ion-icon name="brush-outline" class="skill-icon"></ion-icon></i>
+                        <div class="skills">
+                            <span class="skill">ui/ux</span>
+                            <span class="skill">design system</span>
+                            <span class="skill">web design</span>
+                            <span class="skill">mobile design</span>
+                            <span class="skill">wireframing</span>
+                            <span class="skill">prototyping</span>
+                            <span class="skill">testing</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-container">
+                        <ion-icon name="code-slash-outline" class="skill-icon"></ion-icon></i>
+                        <div class="skills">
+                            <span class="skill">html</span>
+                            <span class="skill">css</span>
+                            <span class="skill">javascript</span>
+                            <span class="skill">jquery</span>
+                            <span class="skill">bootstrap</span>
+                            <span class="skill">node</span>
+                            <span class="skill">web3</span>
+                            <span class="skill">react</span>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
-            <!-- profile :: skills -->
-            <div class="skills">
-                <span class="skill">HTML5</span>
-                <span class="skill">CSS3</span>
-                <span class="skill">JS</span>
-                <span class="skill">Node</span>
-                <span class="skill">web3</span>
-                <span class="skill">dapps</span>
-                <span class="skill">jquery</span>
-                <span class="skill">bootstrap</span>
-                <span class="skill">react</span>
-                <span class="skill">mongodb</span>
-            </div>
-        </div>
-            
 
-            <!-- profile :: image -->
+            <!-- image -->
             <div class="image">
-                <img src="images/profile.png" alt="">
             </div>
         </div>
     </section>
+    <!-- profile :: end -->
 
+
+
+    <!-- career :: start -->
     <section id="career">
         <div class="container">
+            <!-- title -->
             <h2>career</h2>
 
+            <!-- jobs container -->
             <div class="jobs">
+
                 <div class="job">
-                    <img src="images/ideamaker.png" alt="">
-                    <div class="j-info">
-                        <p>idea maker solutions</p>
-                        <p>lead designer & web developer</p>
-                        <p>2 years</p>
+                    <!-- job image -->
+                    <div class="img-info"><img src="images/chuuva.jpg" alt="">
+                        <!-- job info -->
+                        <div class="box-info">
+                            <p>chuuva</p>
+                            <p>ui/ux designer</p>
+                            <p>1 year</p>
+                        </div>
                     </div>
+                    <!-- burger icon -->
+                    <div class="j-button"><ion-icon name="menu-outline"></ion-icon></div>
+                    <!-- info pop-up -->
                     <div class="j-popup">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl ligula, lacinia a orci eu, sodales aliquam quam. Quisque dui erat, volutpat vel mi eget, faucibus scelerisque elit.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel ex non ex molestie lobortis at vel tortor. Integer convallis vitae quam a consectetur.</p>
                         <a href="https://ideamaker.com.br/">website</a>
                     </div>
                 </div>
+
+                <div class="job">
+                    <div class="img-info"><img>
+                        <div class="box-info">
+                            <p>freelance</p>
+                            <p>designer & developer</p>
+                            <p>10+ years</p>
+                        </div>
+                    </div>
+                    <ion-icon class="j-button" name="menu-outline"></ion-icon>
+                    <div class="j-popup">
+                        <p>When I have time, I like to take some freelance job as a Designer. I have experiences developing websites, apps, marketing pieces, vector illustrations, printables and product design.</p>
+                        <a class="not-freelance" href="#contact">not available</a>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="img-info"><img src="images/ideamaker.jpg" alt="">
+                        <div class="box-info">
+                            <p>idea maker</p>
+                            <p>lead designer</p>
+                            <p>2 years</p>
+                        </div>
+                    </div>
+                    <div class="j-button"><ion-icon name="menu-outline"></ion-icon></div>
+                    <div class="j-popup">
+                        <p>Lead a 5 people team of designers. Created concepts, wireframes, mockups, presentations, created websites and apps like ideamaker.com and Apcap da Sorte.</p>
+                        <a href="https://ideamaker.com.br/">website</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
+    <!-- career :: end -->
+
+    <!-- education :: start -->
+    <section id="education">
+        <h2>education</h2>
+
+        <!-- degrees -->
+        <div class="degrees">
+            <div class="college">
+                <img src="images/anhembimorumbi.jpg" alt="">
+                <div class="box-info">
+                    <p>anhembi morumbi</p>
+                    <p>system analysis & development</p>
+                    <p>2023</p>
+                </div>
+            </div>
+
+            <div class="college">
+                <img src="images/anhembimorumbi.jpg" alt="">
+                <div class="box-info">
+                    <p>anhembi morumbi</p>
+                    <p>graphic design</p>
+                    <p>2017</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- courses -->
+        <div class="courses">
+
+            <div class="course">
+                <img src="images/udemy.jpg" alt="">
+                <div class="c-pop-up">
+                    <ul>
+                        <li>web development bootcamp</li>
+                        <li>javascript projects</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="course">
+                <img src="images/cursoemvideo.jpg" alt="">
+                <div class="c-pop-up">
+                    <ul>
+                        <li>html5</li>
+                        <li>css3</li>
+                        <li>javascript</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- education :: start -->
 
     <script src="main.js"></script>
 </body>

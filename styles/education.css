@@ -1,0 +1,10 @@
+#education {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+    color: rgb( var(--clr-light) );
+    background-color: rgb( var(--clr-dark) );
+}
+

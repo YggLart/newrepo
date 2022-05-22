@@ -37,7 +37,7 @@ nav .main-logo::before {
     position: absolute;
     height: .1rem; width: 0rem;
     left: -.5rem; top: 1.8rem;
-    background-color: rgb( var(--clr-light) );
+    background-color: rgb( var(--clr-primary) );
     transition: .1s;
 }
 
@@ -76,7 +76,7 @@ nav .main-logo:hover::before {
     z-index: 3;
     height: 100%; width: 0%;
     left: 0; top: 0;
-    border-bottom: .1rem solid rgb( var(--clr-light) );
+    border-bottom: .1rem solid rgb( var(--clr-primary) );
     transition: .2s;
 }
 
@@ -176,3 +176,7 @@ nav .main-logo:hover::before {
         display: block;
     }
 }
+
+@media (min-width: 1280px) {
+}
+

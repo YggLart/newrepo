@@ -18,6 +18,7 @@
 }
 
 .profile {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,30 +45,54 @@
 .profile .info .title {
     padding-right: 1rem;
     text-align: end;
-    opacity: .5;
+    opacity: .3;
 }
 
 /* profile :: quote */
 .profile .quote {
+    width: 100%;
+
     text-align: center;
     font-style: italic;
     font-size: clamp(1rem, 2.3vw, 2.5rem);
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 2px;
 
     color: rgb( var(--clr-light), .5 );
+    /* background: rgb( var(--clr-black) ); */
 
     --border-weight: 1px;
     --border-color: rgb( var(--clr-light), .3 );
-    border-top: var(--border-weight) solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
+    /* border-top: var(--border-weight) solid var(--border-color);
+    border-bottom: 1px solid var(--border-color); */
 
     padding: .7rem;
 }
 
 /* profile :: skills */
-.profile .skills {
+.profile .skill-big-container {
+    width: 100%;
+    display: flex;
+}
+
+.profile .skill-container {
+    position: relative;
+    transition: .2s;
+    padding: 1.5rem;
     margin-top: 1rem;
+}
+
+.skill-container:hover {
+    background-color: rgb( var(--clr-black), .5 );
+}
+
+.skill-container:hover .skill-icon {
+    color: rgb( var(--clr-primary) );
+}
+
+.profile .skills {
+    width: 80%;
+    margin: 1rem auto 0 auto;
 
     display: flex;
     flex-wrap: wrap;
@@ -77,13 +102,32 @@
     max-width: 35rem;
 }
 
+.skill-icon {
+    margin: 0rem auto 0 auto;
+    z-index: 0;
+
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    
+    color: rgb( var(--clr-primary), .5 );
+
+    display: flex;
+    align-self: center;
+    transition: .5s;
+}
+
 .profile .skill {
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    z-index: 1;
+
     padding: .5rem 1rem;
-    margin: .5rem .5rem;
+    margin: .3rem .3rem;
     text-transform: uppercase;
     transition: .2s;
-    outline: transparent;
+    outline: 1px solid rgb( var(--clr-light), .1 );
+    background-color: rgb( var(--clr-black), .2 );
 
     -webkit-user-select: none;  
     -moz-user-select: none;    
@@ -92,28 +136,37 @@
 }
 
 .profile .skill:hover {
+    color:rgb( var(--clr-primary) );
     background: rgb( var(--clr-black) );
-    --outline-weight: 1px;
-    --outline-color: rgb( var(--clr-light) );
+    --outline-weight: 0.01rem;
+    --outline-color: rgb( var(--clr-primary) );
     outline: var(--outline-weight) solid var(--outline-color);
 
-    --shadow-x: 1px;
-    --shadow-y: 1px;
-    --shadow-blur: 2px;
+    --shadow-x: 0;
+    --shadow-y: 6px;
+    --shadow-blur: 10px;
     box-shadow: var(--shadow-x) var(--shadow-y) var(--shadow-blur) rgb( var(--clr-black) );
 
-    transform: translateY(-3px);
+    
+    transform: translateY(-6px);
 }
 
 /* profile :: image */
-.profile .image img {
+.profile .image {
+    background-image: url("../images/profile.png");
+    background-color: transparent;
+    background-size:cover;
+    background-position: center;
+
     width: clamp(15rem, 36vw, 30rem);
+    height: clamp(15rem, 63vw, 40rem);
     margin-left: 1rem;
+
     filter: grayscale(1);
     transition: .4s;
 }
 
-.profile .image img:hover {
+.profile .image:hover {
     filter: grayscale(0);
 }
 
@@ -124,6 +177,7 @@
 
     .profile {
         flex-direction: column-reverse;
+        height: 100%;
     }
 
     .profile .info {
@@ -134,13 +188,32 @@
         margin: 1rem 0 2rem 0;
     }
 
-    .profile .image img {
+    .profile .skill-big-container {
+        flex-direction: column;
+    }
+
+    .profile .skill-container:first-child {
+        padding-bottom: 2rem;
+        border-right: none;
+    }
+
+    .profile .image {
+        height: 25rem;
         margin: 0;
     }
 }
 
 @media (max-width: 460px) {
+    .profile { 
+        height: 100%;
+    }
+
     .profile .info {
         font-size: clamp(1rem, 4vw, 2rem);
     }
+
+    .profile .image {
+        height: 22rem;
+        
+    margin-left: 0;}
 }

@@ -38,6 +38,7 @@
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 2rem;
+    color: rgb( var(--clr-white) );
 }
 
 .header h1 span {
@@ -46,7 +47,7 @@
 }
 
 .header h1:hover span {
-    color:rgb( var(--clr-light) );
+    color:rgb( var(--clr-white) );
     padding-left: 1.5rem;
 }
 
@@ -54,8 +55,8 @@
 .header hr {
     border: 0;
     height: 1px;
+    width: 75%;
     background-color: rgb( var(--clr-light), .3 ) ;
-    width: 80%;
     margin-bottom: 2rem;
 }
 
@@ -78,5 +79,14 @@
 
 .header button:hover {
     background:rgb( var(--clr-primary) );
-    color:rgb( var(--clr-light) );
+    color:rgb( var(--clr-black) );
+
+    box-shadow: 0 0 8rem rgb( var(--clr-primary), .3 ), 
+                0 0 2rem rgb( var(--clr-primary), .5 );
+}
+
+@media (min-width: 1280px) {
+    .header hr {
+        width: 58rem;
+    }
 }
