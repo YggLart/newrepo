@@ -78,7 +78,7 @@
 .profile .skill-container {
     position: relative;
     transition: .2s;
-    padding: 1.5rem;
+    padding: 4rem 0rem;
     margin-top: 1rem;
 }
 
@@ -193,7 +193,7 @@
     }
 
     .profile .skill-container:first-child {
-        padding-bottom: 2rem;
+        /* padding-bottom: 5rem; */
         border-right: none;
     }
 

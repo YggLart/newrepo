@@ -10,7 +10,7 @@ nav {
     top: 0;
     z-index: 100;
 
-    --bg-opacity: .5;
+    --bg-opacity: .8;
     background: rgb( var(--clr-black) , var(--bg-opacity, .5) );
     color: rgb( var(--clr-light) );
     backdrop-filter: blur(8px);
@@ -23,7 +23,7 @@ nav {
 }
 
 /* navbar :: logo */
-nav .main-logo {
+.main-logo {
     font-size: 3rem;
     font-weight: 900;
     letter-spacing: -5px;
@@ -32,7 +32,7 @@ nav .main-logo {
     transition: .1s;
 }
 
-nav .main-logo::before {
+.main-logo::before {
     content: '';
     position: absolute;
     height: .1rem; width: 0rem;
@@ -41,7 +41,7 @@ nav .main-logo::before {
     transition: .1s;
 }
 
-nav .main-logo:hover::before {
+.main-logo:hover::before {
     width: 4.9rem;
 }
 
@@ -110,6 +110,7 @@ nav .main-logo:hover::before {
     color: rgb( var(--clr-light) );
     background: rgb( var(--clr-black) , var(--bg-opacity, .5) );
     outline: 1px solid rgb( var(--clr-light) );
+    backdrop-filter: blur(8px);
 }
 
 
@@ -122,17 +123,27 @@ nav .main-logo:hover::before {
     }
 
     /* main logo */
-    nav .main-logo {
+    nav .main-logo a {
         padding: 1rem;
-        margin: 1rem 0 0 1rem;
+        margin: 1rem 0 0 0;
 
         font-size: 2rem;
         letter-spacing: -2px;
         outline: 1px solid rgb( var(--clr-light) );
-        background: rgb( var(--clr-black) , var(--bg-opacity, .5) );
+        background: rgb( var(--clr-black) , var(--bg-opacity, .6) );
+        backdrop-filter: blur(8px);
+    }
+
+    nav .main-logo:hover {
+        color: rgb( var(--clr-primary) );
+    }
+
+    nav .main-logo a:hover {
+        outline: 1px solid rgb( var(--clr-primary) );
     }
 
     nav .main-logo::before {
+        z-index: 2;
         height: .1rem; width: 0rem;
         left: 0.5rem; top: 2.1rem;
     }
@@ -151,7 +162,7 @@ nav .main-logo:hover::before {
         flex-direction: column;
         position: absolute;
 
-        background: rgb( var(--clr-black), .5);
+        background: rgb( var(--clr-black), .85);
         backdrop-filter: blur(8px);
         border-left: 1px solid rgb( var(--clr-black) );
     }

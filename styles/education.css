@@ -1,10 +1,113 @@
+
 #education {
     min-height: 50vh;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 0 2rem;
 
     color: rgb( var(--clr-light) );
     background-color: rgb( var(--clr-dark) );
 }
 
+.info-box-container.course { 
+    gap: 1rem;
+}
+
+.info-box.course > .img-info img {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.info-box.course {
+    display: flex;
+    height: 100%;
+    flex-basis: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.info-box.course > .info-box-more ul,
+.info-box.course > .info-box-more li  {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.info-box.course > .info-box-more li {
+    display: flex;
+    justify-content: center;
+    opacity: .7;
+    padding: .5rem 1rem;
+    transition: .2s;
+    position: relative;
+
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.info-box-more li span.date {
+    display: none;
+    opacity: .2;
+    transition: .2s
+}
+
+@media (min-width: 1200px) {
+    .info-box-more li span.date {
+        display: flex;
+        gap: .5rem;
+    }
+
+    .info-box.course > .info-box-more li {
+        justify-content: space-between;
+    }
+}
+.info-box-more li:hover span.date {
+    opacity: 1;
+}
+
+.info-box.course > .info-box-more li::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0; left: 0;
+    z-index: -2;
+    transition: .5s;
+
+    background: rgb( var(--clr-primary) );
+}
+
+.info-box.course > .info-box-more li:hover::before {
+    width: 100%;
+}
+
+.info-box.course > .info-box-more li:hover::after {
+    opacity: 1;
+}
+
+.info-box.course > .info-box-more li:hover {
+    opacity: 1;
+    color:rgb( var(--clr-dark) );
+}
+
+@media (max-width: 860px) {
+    .info-box-container.course {
+        flex-wrap: wrap;
+        flex-direction: row;
+    justify-content: center;}
+
+    .info-box.course {
+    flex-basis: 75%;}
+
+    .info-box.course > .info-box-more ul {
+        width: 100%;
+    }
+
+    .info-box.course > .info-box-more {
+        width: 100%;
+        flex-shrink: 5rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}

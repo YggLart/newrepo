@@ -12,6 +12,8 @@
     <!-- css :: profile --> <link rel="stylesheet" href="styles/profile.css">
     <!-- css :: career --> <link rel="stylesheet" href="styles/career.css">
     <!-- css :: education --> <link rel="stylesheet" href="styles/education.css">
+    <!-- css :: pojects --> <link rel="stylesheet" href="styles/projects.css">
+    <!-- css :: footer --> <link rel="stylesheet" href="styles/footer.css">
 
 
     <!-- google font -->
@@ -20,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <!-- font awesome -->
+    <script data-search-pseudo-elements src="https://kit.fontawesome.com/f737751420.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/64de45cbba.js" crossorigin="anonymous"></script>
 
     <!-- ionicon -->
@@ -36,10 +39,10 @@
 
         <div class="nav-links">
                  <a href="#profile">profile</a>
-                <a href="#experiences">experiences</a>
+                <a href="#career">experiences</a>
                 <a href="#projects">projects</a>
                 <a href="#contact">contact</a>
-                <a href="#" class="resume">resume</a>
+                <a href="https://drive.google.com/file/d/1hBz2eyv_Eo83OthW_J55oH5D8_auNLBf/view?usp=sharing" class="resume">resume</a>
         </div>
 
         <div class="menu-icon" onclick="responsiveMenu()"><i class="fa-solid fa-bars"></i></div>
@@ -53,7 +56,7 @@
             <h1>ygor<span>goulart</span></h1>
             <hr>
             <h3>Designer & Developer</h3>
-            <button>see my projects</button>
+            <a href="#projects">see my projects</a>
         </div>
     </section>
     <!-- header :: end -->
@@ -132,54 +135,54 @@
             <h2>career</h2>
 
             <!-- jobs container -->
-            <div class="jobs">
+            <div class="info-box-container">
 
-                <div class="job">
+                <div class="info-box">
                     <!-- job image -->
                     <div class="img-info"><img src="images/chuuva.jpg" alt="">
                         <!-- job info -->
-                        <div class="box-info">
-                            <p>chuuva</p>
+                        <div class="info-box-description">
+                            <p class="clr-primary fw-600 ltr-space-2">chuuva</p>
                             <p>ui/ux designer</p>
-                            <p>1 year</p>
+                            <p class="opacity-5">1 year</p>
                         </div>
                     </div>
                     <!-- burger icon -->
-                    <div class="j-button"><ion-icon name="menu-outline"></ion-icon></div>
+                    <ion-icon name="menu-outline"></ion-icon>
                     <!-- info pop-up -->
-                    <div class="j-popup">
+                    <div class="info-box-more">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel ex non ex molestie lobortis at vel tortor. Integer convallis vitae quam a consectetur.</p>
-                        <a href="https://ideamaker.com.br/">website</a>
+                        <a class="btn-primary" href="https://ideamaker.com.br/">website</a>
                     </div>
                 </div>
 
-                <div class="job">
+                <div class="info-box">
                     <div class="img-info"><img>
-                        <div class="box-info">
-                            <p>freelance</p>
+                        <div class="info-box-description">
+                            <p class="clr-primary fw-600 ltr-space-2">freelance</p>
                             <p>designer & developer</p>
-                            <p>10+ years</p>
+                            <p class="opacity-5">10+ years</p>
                         </div>
                     </div>
-                    <ion-icon class="j-button" name="menu-outline"></ion-icon>
-                    <div class="j-popup">
+                    <ion-icon name="menu-outline"></ion-icon>
+                    <div class="info-box-more">
                         <p>When I have time, I like to take some freelance job as a Designer. I have experiences developing websites, apps, marketing pieces, vector illustrations, printables and product design.</p>
-                        <a class="not-freelance" href="#contact">not available</a>
+                        <a class="btn-off" href="#contact">not available</a>
                     </div>
                 </div>
 
-                <div class="job">
+                <div class="info-box">
                     <div class="img-info"><img src="images/ideamaker.jpg" alt="">
-                        <div class="box-info">
-                            <p>idea maker</p>
+                        <div class="info-box-description">
+                            <p class="clr-primary fw-600 ltr-space-2">idea maker</p>
                             <p>lead designer</p>
-                            <p>2 years</p>
+                            <p class="opacity-5">2 years</p>
                         </div>
                     </div>
-                    <div class="j-button"><ion-icon name="menu-outline"></ion-icon></div>
-                    <div class="j-popup">
+                    <ion-icon name="menu-outline"></ion-icon>
+                    <div class="info-box-more">
                         <p>Lead a 5 people team of designers. Created concepts, wireframes, mockups, presentations, created websites and apps like ideamaker.com and Apcap da Sorte.</p>
-                        <a href="https://ideamaker.com.br/">website</a>
+                        <a class="btn-primary" href="https://ideamaker.com.br/">website</a>
                     </div>
                 </div>
 
@@ -193,55 +196,134 @@
         <h2>education</h2>
 
         <!-- degrees -->
-        <div class="degrees">
-            <div class="college">
-                <img src="images/anhembimorumbi.jpg" alt="">
-                <div class="box-info">
-                    <p>anhembi morumbi</p>
-                    <p>system analysis & development</p>
-                    <p>2023</p>
+        <div class="info-box-container college">
+            <div class="info-box">
+                <div class="img-info">
+                    <img src="images/anhembimorumbi.jpg" alt="">
+                    <div class="info-box-description">
+                        <p>anhembi morumbi</p>
+                        <p class="clr-primary fw-600 ltr-space-2">system analysis & development</p>
+                        <p class="opacity-5">2023</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="college">
-                <img src="images/anhembimorumbi.jpg" alt="">
-                <div class="box-info">
-                    <p>anhembi morumbi</p>
-                    <p>graphic design</p>
-                    <p>2017</p>
+                <div class="info-box">
+                    <div class="img-info">
+                        <img src="images/anhembimorumbi.jpg" alt="">
+                        <div class="info-box-description">
+                            <p>anhembi morumbi</p>
+                            <p class="clr-primary fw-600 ltr-space-2">graphic design</p>
+                            <p class="opacity-5">2017</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
         <!-- courses -->
-        <div class="courses">
+        <div class="info-box-container course">
 
-            <div class="course">
-                <img src="images/udemy.jpg" alt="">
-                <div class="c-pop-up">
+            <div class="info-box course">
+                <div class="img-info"><img src="images/udemy.jpg" alt="">
+                    <div class="info-box-description">
+                        <p class="clr-light ltr-space-2">udemy</p>
+                    </div>
+                </div>
+                <div class="info-box-more">
                     <ul>
-                        <li>web development bootcamp</li>
-                        <li>javascript projects</li>
+                        <li>html5/css3 <span class="date">2020 <i class="fa-solid fa-check"></i></span></li>
+                        <li>javascript <span class="date">2020 <i class="fa-solid fa-check"></i></span></li>
+                        <li>bootstrap <span class="date">2020 <i class="fa-solid fa-check"></i></span></li>
+                        <li>jquery <span class="date">2020 <i class="fa-solid fa-check"></i></span></li>
+                        <li>node.js <span class="date">2020 <i class="fa-solid fa-check"></i></span></li>
+                        <li>react <span class="date">2020 <i class="fa-solid fa-check"></i></span></li>
                     </ul>
                 </div>
             </div>
-            <div class="course">
-                <img src="images/cursoemvideo.jpg" alt="">
-                <div class="c-pop-up">
+
+            <div class="info-box course">
+                <div class="img-info"><img src="images/cursoemvideo.png" alt="">
+                    <div class="info-box-description">
+                        <p class="clr-light ltr-space-2">curso em video</p>
+                    </div>
+                </div>
+                <div class="info-box-more">
                     <ul>
-                        <li>html5</li>
-                        <li>css3</li>
-                        <li>javascript</li>
+                        <li>html5/css3 <span class="date">2020 <i class="fa-solid fa-check"></i></span></li>
+                        <li>javascript <span class="date">2020 <i class="fa-solid fa-check"></i></span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="info-box course">
+                <div class="img-info"><img src="images/scrimba.png" alt="">
+                    <div class="info-box-description">
+                        <p class="clr-light ltr-space-2">scrimba</p>
+                    </div>
+                </div>
+                <div class="info-box-more">
+                    <ul>
+                        <li>html5/css3 <span class="date">2020 <i class="fa-solid fa-check"></i></span></li>
+                        <li>javascript <span class="date">2020 <i class="fa-solid fa-check"></i></span></li>
+                        <li>clean code <span class="date">2020 <i class="fa-solid fa-check"></i></span></li>
                     </ul>
                 </div>
             </div>
 
         </div>
     </section>
+    <!-- education :: end -->
 
-    <!-- education :: start -->
+    <!-- project :: start -->
+    <section id="projects">
+        <div class="flex col">
+            <h2>projects</h2>
+
+            <div class="projects flex wrap gap-1 j-space-around">
+
+                <div class="project">
+                    <img src="images/projects/game-on.jpg" alt="">
+                    <div class="cover-info flex col">
+                        <ion-icon class="main-icon" name="game-controller-outline"></ion-icon>
+                        <h4>Game-On</h4>
+                        <a class="btn-primary" href="">see it on behance <ion-icon name="logo-behance"></ion-icon> </a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi luctus massa vel faucibus ullamcorper. Sed at ipsum tempus.</p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="images/projects/spacetravel.jpg" alt="">
+                    <div class="cover-info flex col">
+                        <ion-icon class="main-icon" name="rocket-outline"></ion-icon>
+                        <h4>Space Travel</h4>
+                        <a class="btn-primary" href="">see it on behance <ion-icon name="logo-behance"></ion-icon> </a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi luctus massa vel faucibus ullamcorper. Sed at ipsum tempus.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- project :: end -->
+    
+    <!-- footer :: start -->
+    <section id="contact">
+            <div class="flex col">
+                <a class="mail uppercase" href="mailto:ygorgm95@gmail.com"><span class="fw-700">ygorgm95</span>@gmail.com</a>
+                <a class="phone" href="https://api.whatsapp.com/send?phone=5511952831030"><ion-icon name="logo-whatsapp"></ion-icon> +55 (11) <span class="fw-700">9 5283 1030</span></a>
+            </div>
+            <a class="main-logo uppercase" href="#">yg</a>
+            <div class="flex row j-center">
+                <a class="social" href="https://github.com/YggLart"><ion-icon name="logo-github"></ion-icon></a>
+                <a class="social" href="https://www.instagram.com/ygg.art_/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a class="social" href="https://www.linkedin.com/in/ygorgm/"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+    </section>
+
+    <!-- footer :: end -->
 
     <script src="main.js"></script>
+
 </body>
 
 </html>
