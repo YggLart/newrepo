@@ -21,15 +21,9 @@
     font-size: clamp(1rem, 2vw, 1.5rem);
     letter-spacing: 3px;
 
-    --opacity: .3;
+    --opacity: .5;
     color: rgb( var(--clr-light), var(--opacity, .5) );
-    outline: 1px solid rgb( var(--clr-light), var(--opacity, .5));
-}
-
-@media (max-width: 860px) {
-    .mail, .phone {
-        font-
-    }
+    outline: 1px solid rgb( var(--clr-light), 0);
 }
 
 .mail:hover, .phone:hover {
@@ -58,7 +52,7 @@
 
     --opacity: .5;
     color: rgb( var(--clr-light), var(--opacity, .5) );
-    outline: 1px solid rgb( var(--clr-light), var(--opacity, .5));
+    outline: 1px solid rgb( var(--clr-light), 0);
 }
 
 #contact .social:hover {
