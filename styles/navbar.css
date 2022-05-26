@@ -123,6 +123,10 @@ nav {
     }
 
     /* main logo */
+    nav .main-logo {
+        margin-left: 1rem;
+    }
+
     nav .main-logo a {
         padding: 1rem;
         margin: 1rem 0 0 0;
