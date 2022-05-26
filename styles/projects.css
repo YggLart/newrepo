@@ -138,6 +138,10 @@
 
 @media (max-width: 860px) {
 
+    #projects {
+        padding: 2rem 0;
+    }
+
     .projects {
         display: flex;
         flex-direction: column;

@@ -91,6 +91,10 @@
 }
 
 @media (max-width: 860px) {
+    #education {
+        padding: 0;
+    }
+
     #education h2 {
         margin-top: 5rem;
     }
@@ -98,10 +102,18 @@
     .info-box-container.course {
         flex-wrap: wrap;
         flex-direction: row;
-    justify-content: center;}
+        justify-content: center;
+        gap: 0;
+    }
+
+    .info-box {
+        background: rgb( var(--clr-black) );
+    }
 
     .info-box.course {
-    flex-basis: 75%;}
+        background: rgb( var(--clr-black) );
+        flex-basis: 75%;
+}
 
     .info-box.course > .info-box-more ul {
         width: 100%;

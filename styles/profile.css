@@ -78,7 +78,7 @@
 .skill-container {
     position: relative;
     transition: .2s;
-    padding: 4rem 0rem;
+    padding: 1rem 0rem 4rem;
     margin-top: 1rem;
 }
 
@@ -185,7 +185,7 @@
     }
 
     .profile .quote {
-        margin: 1rem 0 2rem 0;
+        margin: 1rem 0 0rem 0;
     }
 
     .profile .skill-big-container {
@@ -193,7 +193,7 @@
     }
 
     .profile .skill-container:first-child {
-        /* padding-bottom: 5rem; */
+        padding: 1rem;
         border-right: none;
     }
 

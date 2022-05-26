@@ -132,7 +132,7 @@ nav {
         outline: 1px solid rgb( var(--clr-light) );
         background: rgb( var(--clr-black) , var(--bg-opacity, .6) );
         backdrop-filter: blur(8px);
-    }
+    z-index: 99;}
 
     nav .main-logo:hover {
         color: rgb( var(--clr-primary) );
@@ -175,7 +175,7 @@ nav {
     }
 
     .nav-links a {
-        margin: 2rem 0;
+        margin: 1rem 0;
     }
 
     .nav-active {
