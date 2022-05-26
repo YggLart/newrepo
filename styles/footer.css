@@ -11,6 +11,7 @@
     font-weight: 300;
 }
 
+
 .mail, .phone {
     display: flex;
     align-items: center;
@@ -33,6 +34,10 @@
 .mail {
     --opacity: .6;
     margin-bottom: 1rem;
+}
+
+#contact .main-logo {
+    margin: 0;
 }
 
 #contact .social {

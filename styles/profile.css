@@ -70,12 +70,12 @@
 }
 
 /* profile :: skills */
-.profile .skill-big-container {
+.skill-big-container {
     width: 100%;
     display: flex;
 }
 
-.profile .skill-container {
+.skill-container {
     position: relative;
     transition: .2s;
     padding: 4rem 0rem;
@@ -90,7 +90,7 @@
     color: rgb( var(--clr-primary) );
 }
 
-.profile .skills {
+.skills {
     width: 80%;
     margin: 1rem auto 0 auto;
 
@@ -115,7 +115,7 @@
     transition: .5s;
 }
 
-.profile .skill {
+.skill {
     text-align: center;
     font-size: 1rem;
     font-weight: 300;
@@ -135,7 +135,7 @@
     user-select: none;
 }
 
-.profile .skill:hover {
+.skill:hover {
     color:rgb( var(--clr-primary) );
     background: rgb( var(--clr-black) );
     --outline-weight: 0.01rem;

@@ -91,6 +91,10 @@
 }
 
 @media (max-width: 860px) {
+    #education h2 {
+        margin-top: 5rem;
+    }
+
     .info-box-container.course {
         flex-wrap: wrap;
         flex-direction: row;
