@@ -9,7 +9,7 @@
 - I'm proud of it, but it's outdated.
 
 # 🚀 Access
-The website is hosted in `GitHub Pages` at: https://ygg-m.github.io/cv/
+The website is hosted by `GitHub Pages` at: https://ygg-m.github.io/cv/
 
 # 🎯 Goals
 - [x] Design the base Project  
