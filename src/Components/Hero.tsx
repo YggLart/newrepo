@@ -11,7 +11,7 @@ export const Hero = () => {
           </h1>
           <p className="py-8 text-3xl">Developer & Designer</p>
           <a
-            href="#"
+            href="#Projects"
             className="uppercase font-thin outline outline-primary outline-1 text-primary hover:bg-primary hover:text-neutral duration-300 text-xl sm:text-5xl h-fit p-8 px-12"
           >
             See my Projects
