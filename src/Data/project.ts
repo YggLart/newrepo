@@ -1,4 +1,9 @@
-import Generic from "../Assets/projects/spacetravel.jpg";
+import AngularBlog from "../Assets/projects/angularblog.png";
+import AngularBuzzfeed from "../Assets/projects/angularbuzzfeed.png";
+import FGInputTranslator from "../Assets/projects/fginputtranslator.png";
+import JSPokedex from "../Assets/projects/jspokedex.png";
+import ToDo from "../Assets/projects/todo.png";
+import YggXIV from "../Assets/projects/yggxiv.png";
 
 export interface ProjectTypes {
   Thumbnail: string;
@@ -12,7 +17,7 @@ export interface ProjectTypes {
 
 export const project = [
   {
-    Thumbnail: Generic,
+    Thumbnail: FGInputTranslator,
     Name: "Fight Game Input Translator",
     Description: "App that converts numeral inputs into visual inputs.",
     Tags: ["React", "JavaScript", "Tailwind CSS", "React Router"],
@@ -21,7 +26,7 @@ export const project = [
     Link: "https://ygg-m.github.io/fg-input-translator/",
   },
   {
-    Thumbnail: Generic,
+    Thumbnail: YggXIV,
     Name: "Ygg XIV",
     Description:
       "Get data from xivapi.com and oprganize it to show ranking, stats and more about Guilds and Characters from Final Fantasy XIV.",
@@ -31,7 +36,7 @@ export const project = [
     Link: "",
   },
   {
-    Thumbnail: Generic,
+    Thumbnail: JSPokedex,
     Name: "Pokédex",
     Description: "Get data from PokéAPI to create a dinamic Pokédex.",
     Tags: ["JavaScript", "HTML", "CSS"],
@@ -40,7 +45,7 @@ export const project = [
     Link: "https://ygg-m.github.io/js-pokedex/",
   },
   {
-    Thumbnail: Generic,
+    Thumbnail: ToDo,
     Name: "To-Do App",
     Description: "Simple To-Do App to track your goals.",
     Tags: ["JavaScript", "HTML", "CSS"],
@@ -49,7 +54,7 @@ export const project = [
     Link: "https://ygg-m.github.io/to-do-app/",
   },
   {
-    Thumbnail: Generic,
+    Thumbnail: AngularBlog,
     Name: "Angular Blog",
     Description:
       "Fun project made in Angular with the objective of learning more about the Framework.",
@@ -59,7 +64,7 @@ export const project = [
     Link: "https://ygg-m.github.io/angular-blog/",
   },
   {
-    Thumbnail: Generic,
+    Thumbnail: AngularBuzzfeed,
     Name: "Angular Buzzfeed",
     Description:
       "Fun project made in Angular with the objective of learning more about the Framework.",
