@@ -40,10 +40,10 @@ export const Profile = () => {
 
     const Quote = () => {
       return (
-        <div className="grid justify-center">
+        <div className="grid justify-center text-center">
           <svg
             aria-hidden="true"
-            className="w-10 h-10 text-gray-400 dark:text-gray-600"
+            className="w-10 h-10 text-gray-400 dark:text-gray-600 opacity-60"
             viewBox="0 0 24 27"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
@@ -56,6 +56,20 @@ export const Profile = () => {
           <div className="italic text-2xl">
             <span className="font-bold text-primary">Designer</span> by heart,{" "}
             <span className="font-bold text-primary">Developer</span> by choice.
+          </div>
+          <div className="w-full flex justify-end">
+            <svg
+              aria-hidden="true"
+              className="w-10 h-10 text-gray-400 dark:text-gray-600 rotate-180 opacity-60"
+              viewBox="0 0 24 27"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                fill="currentColor"
+              />
+            </svg>
           </div>
         </div>
       );
