@@ -36,7 +36,7 @@ export const Navbar = () => {
           Resume
         </a>
 
-        <div className="dropdown dropdown-end">
+        <div className="dropdown dropdown-end md:hidden">
           <button
             tabIndex={0}
             className="bg-neutral duration-200 p-4 px-6 hover:bg-primary hover:text-neutral"
