@@ -19,7 +19,7 @@ export const Career = () => {
         className="collapse h-fit outline outline-1 outline-gray-700 hover:outline-primary duration-300 cursor-pointer hover:text-primary"
         tabIndex={0}
       >
-        <article className="flex p-4 gap-4">
+        <article className="flex flex-col sm:flex-row items-center p-4 gap-4">
           <img src={Image} alt={Place} className="w-24 h-24" />
           <div className="grid gap-2">
             <span className="justify-center sm:justify-start flex items-center">

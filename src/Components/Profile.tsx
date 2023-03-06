@@ -15,7 +15,7 @@ export const Profile = () => {
       const Age = getAge(Today, Birthday);
 
       return (
-        <div className="flex gap-x-4 text-3xl justify-center">
+        <div className="flex gap-x-4 text-lg sm:text-3xl justify-center">
           <div className="flex flex-col w-fit items-end gap-2">
             <span className="uppercase text-right font-thin opacity-70 w-fit">
               Name
@@ -143,7 +143,7 @@ export const Profile = () => {
           <div className="flex flex-wrap justify-center gap-2">
             {List.map((skill) => {
               return (
-                <div className="badge badge-lg bg-primary text-neutral select-none hover:scale-125">
+                <div className="badge sm:badge-lg bg-primary text-neutral select-none hover:scale-125">
                   {skill}
                 </div>
               );
