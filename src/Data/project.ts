@@ -29,7 +29,7 @@ export const project = [
     Thumbnail: YggXIV,
     Name: "Ygg XIV",
     Description:
-      "Get data from xivapi.com and oprganize it to show ranking, stats and more about Guilds and Characters from Final Fantasy XIV.",
+      "Get data from xivapi.com and organize it to show ranking, stats and more about Guilds and Characters from Final Fantasy XIV.",
     Tags: ["React", "TypeScript", "Tailwind CSS", "React Router"],
     GitHub: "https://github.com/ygg-m/yggxiv",
     Behance: "",
