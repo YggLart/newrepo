@@ -21,6 +21,7 @@ export const Project = () => {
   const Card = ({ Data }: CardProps) => {
     const { Thumbnail, Name, Description, Tags, GitHub, Behance, Link } = Data;
     const haveBehance = Behance !== "";
+    const isLinkEmpty = Link === "";
 
     return (
       <div className="outline outline-1 outline-gray-700 hover:outline-primary duration-300 shadow-xl flex flex-col justify-between">
@@ -62,12 +63,21 @@ export const Project = () => {
               </a>
             )}
           </div>
-          <a
-            href={Link}
-            className="p-4 bg-base-300 duration-300 hover:bg-primary hover:text-neutral font-bold"
-          >
-            See it Live →
-          </a>
+          {isLinkEmpty ? (
+            <a
+              href="#Projects"
+              className="cursor-default p-4 bg-neutral duration-300 text-gray-500 font-bold"
+            >
+              Comming Soon!
+            </a>
+          ) : (
+            <a
+              href={Link}
+              className="p-4 bg-base-300 duration-300 hover:bg-primary hover:text-neutral font-bold"
+            >
+              See it Live →
+            </a>
+          )}
         </div>
       </div>
     );
