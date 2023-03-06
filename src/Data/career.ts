@@ -7,9 +7,9 @@ export const career = [
     Place: "Finby",
     Role: "Designer",
     Description: [
-      "Consolidated a new identity that enhanced company external view with clients.",
-      "Designed mobile applications with 10k+ views per week and 2M+ downloads.",
-      "Lead a team of 4 people that was responsible for every media from the company wich increased partnership with clients and expanded our product to new ones.",
+      "Created new design patterns for the company that improved the productivity in the media team.",
+      "Designed virtual products and illustrations that was the base of the company.",
+      "Created the layout for the new website and improved the UX.",
     ],
     From: new Date("2022-03-01"),
     To: new Date("2023-1-20"),
