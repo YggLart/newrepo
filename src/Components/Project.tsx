@@ -66,7 +66,7 @@ export const Project = () => {
           {isLinkEmpty ? (
             <a
               href="#Projects"
-              className="cursor-default p-4 bg-neutral duration-300 text-gray-500 font-bold"
+              className="cursor-default p-4 duration-300 text-gray-500 font-bold"
             >
               Comming Soon!
             </a>
