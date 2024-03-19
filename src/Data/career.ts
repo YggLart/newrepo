@@ -1,19 +1,18 @@
-import Finby from "../Assets/career/finby.jpg";
+import Concentrix from "../Assets/career/concentrix.jpg";
 import IdeaMaker from "../Assets/career/ideamaker.jpg";
 import LIQ from "../Assets/career/liq.png";
 
 export const career = [
   {
-    Place: "Finby",
-    Role: "Designer",
+    Place: "Concentrix",
+    Role: "IT Analist",
     Description: [
-      "Created new design patterns for the company that improved the productivity in the media team.",
-      "Designed virtual products and illustrations that was the base of the company.",
-      "Created the layout for the new website and improved the UX.",
+      "As an IT analyst, I utilized Jira and other tools for efficient project management.",
+      "Tracking tasks and coordinating with teams, these tools were crucial for streamlined workflows and timely deliveries, highlighting the impact of technology on operational success.",
     ],
-    From: new Date("2022-03-01"),
-    To: new Date("2023-1-20"),
-    Image: Finby,
+    From: new Date("2023-02-01"),
+    To: new Date("2024-2-20"),
+    Image: Concentrix,
   },
   {
     Place: "Idea Maker",
