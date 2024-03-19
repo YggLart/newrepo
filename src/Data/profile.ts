@@ -18,9 +18,18 @@ export const ProfileData = {
       "Wireframing",
       "Prototyping",
       "Testing",
+      "Figma",
+      "Adobe"
     ],
     Code: [
       "React",
+      "Angular 17",
+      "Vue",
+      "MongoDB",
+      "Firebase",
+      "Supabase",
+      "TailwindCSS",
+      "SASS",
       "NodeJS",
       "TypeScript",
       "JavaScript",

@@ -1,6 +1,7 @@
 import Concentrix from "../Assets/career/concentrix.jpg";
 import IdeaMaker from "../Assets/career/ideamaker.jpg";
 import LIQ from "../Assets/career/liq.png";
+import PAK from "../Assets/career/pak.jpeg"
 
 export const career = [
   {
@@ -13,6 +14,19 @@ export const career = [
     From: new Date("2023-02-01"),
     To: new Date("2024-2-20"),
     Image: Concentrix,
+  },
+  {
+    Place: "Planned Acts of Kindness",
+    Role: "Web Developer",
+    Description: [
+      "Actively contributed to the expansion of their global impact by developing pages on WordPress.",
+      "Through my efforts, I crafted user-friendly and engaging web pages that effectively conveyed the organization’s mission and showcased the transformative acts of kindness they initiated world-wide.",
+      "These pages served as a powerful tool for spreading awareness and garnering support, fostering a sense of community around the shared goal of making a positive difference in people’s lives.",
+      "It was a fulfilling experience to leverage my skills to amplify the reach of an organization dedicated to benevolence and kindness on a global scale."
+    ],
+    From: new Date("2022-11-01"),
+    To: new Date("2024-2-20"),
+    Image: PAK,
   },
   {
     Place: "Idea Maker",
