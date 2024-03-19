@@ -8,18 +8,18 @@ export const education = {
   Graduations: [
     {
       Place: "Anhembi Morumbi University",
-      Course: "Computer Science",
-      From: new Date("2023-02-01"),
-      To: new Date("2027-12-20"),
+      Course: "Analysis and Systems Development Science",
+      From: new Date("2024-06-01"),
+      To: new Date("2026-12-20"),
       Image: AnhembiMorumbi,
     },
-    {
-      Place: "Anhembi Morumbi University",
-      Course: "Design",
-      From: new Date("2014-02-01"),
-      To: new Date("2018-12-20"),
-      Image: AnhembiMorumbi,
-    },
+    // {
+    //   Place: "Anhembi Morumbi University",
+    //   Course: "Design",
+    //   From: new Date("2014-02-01"),
+    //   To: new Date("2018-12-20"),
+    //   Image: AnhembiMorumbi,
+    // },
   ],
   Courses: [
     {
