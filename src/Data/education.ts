@@ -8,7 +8,7 @@ export const education = {
   Graduations: [
     {
       Place: "Anhembi Morumbi University",
-      Course: "Analysis and Systems Development Science",
+      Course: "Analysis and Systems Development",
       From: new Date("2024-06-01"),
       To: new Date("2026-12-20"),
       Image: AnhembiMorumbi,
