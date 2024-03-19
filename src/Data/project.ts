@@ -25,16 +25,16 @@ export const project = [
     Behance: "",
     Link: "https://ygg-m.github.io/fg-input-translator/",
   },
-  {
-    Thumbnail: YggXIV,
-    Name: "Ygg XIV",
-    Description:
-      "Get data from xivapi.com and oprganize it to show ranking, stats and more about Guilds and Characters from Final Fantasy XIV.",
-    Tags: ["React", "TypeScript", "Tailwind CSS", "React Router"],
-    GitHub: "https://github.com/ygg-m/yggxiv",
-    Behance: "",
-    Link: "",
-  },
+  // {
+  //   Thumbnail: YggXIV,
+  //   Name: "Ygg XIV",
+  //   Description:
+  //     "Get data from xivapi.com and oprganize it to show ranking, stats and more about Guilds and Characters from Final Fantasy XIV.",
+  //   Tags: ["React", "TypeScript", "Tailwind CSS", "React Router"],
+  //   GitHub: "https://github.com/ygg-m/yggxiv",
+  //   Behance: "",
+  //   Link: "",
+  // },
   {
     Thumbnail: JSPokedex,
     Name: "Pokédex",
