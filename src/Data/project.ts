@@ -4,6 +4,7 @@ import FGInputTranslator from "../Assets/projects/fginputtranslator.png";
 import JSPokedex from "../Assets/projects/jspokedex.png";
 import ToDo from "../Assets/projects/todo.png";
 import YggXIV from "../Assets/projects/yggxiv.png";
+import angularTodo from "../Assets/projects/angularTodo.png"
 
 export interface ProjectTypes {
   Thumbnail: string;
@@ -11,11 +12,20 @@ export interface ProjectTypes {
   Description: string;
   Tags: string[];
   GitHub: string;
-  Behance: string;
+  Behance?: string;
   Link: string;
 }
 
 export const project = [
+  {
+  Thumbnail: angularTodo,
+  Name: "Angular To-Do w/ Authentication",
+  Description: "Todo App with authentication using Angular 17 and Firebase.",
+  Tags: ["Angular", "TypeScript", "Firebase", "Tailwind CSS"],
+  GitHub: "https://github.com/ygg-m/angular-todo",
+  // Behance: "",
+  Link: "ygg-todo.web.app/",
+},
   {
     Thumbnail: FGInputTranslator,
     Name: "Fight Game Input Translator",
