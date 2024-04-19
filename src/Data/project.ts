@@ -23,7 +23,7 @@ export const project = [
     Description: "Todo App with authentication using Angular 17 and Firebase.",
     Tags: ["Angular", "TypeScript", "Firebase", "Tailwind CSS"],
     GitHub: "https://github.com/ygg-m/angular-todo",
-    // Behance: "",
+    Behance: "",
     Link: "https://ygg-todo.web.app/",
   },
   {
