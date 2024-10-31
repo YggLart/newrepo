@@ -1,9 +1,27 @@
 import Concentrix from "../Assets/career/concentrix.jpg";
+import ACSoftware from "../Assets/career/acsoftware.jpg";
 import IdeaMaker from "../Assets/career/ideamaker.jpg";
 import LIQ from "../Assets/career/liq.png";
 import PAK from "../Assets/career/pak.jpeg"
 
 export const career = [
+  {
+    Place: "ACSoftware",
+    Role: "BI Agent",
+    Description: [
+      "Transitioned from Customer Support to Business Intelligence role, leveraging deep product knowledge and customer insights to enhance data-driven decision making",
+      "Bridge communication between development teams and stakeholders by translating complex technical data into actionable business insights",
+      "Analyze and monitor key performance indicators (KPIs) for IT management software solutions",
+      "Create and maintain dashboards for executive reporting on product usage, customer satisfaction, and market trends",
+      "Collaborate with development teams to implement data collection strategies and improve product metrics",
+      "Identify patterns in customer behavior and usage data to inform product development priorities",
+      "Generate regular reports on customer adoption rates and feature utilization",
+      "Support sales team with data-backed insights for prospect engagement",
+    ],
+    From: new Date("2024-06-10"),
+    To: 'Today',
+    Image: ACSoftware,
+  },
   {
     Place: "Concentrix",
     Role: "IT Analist",
